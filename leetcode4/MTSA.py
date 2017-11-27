@@ -6,3 +6,9 @@ class Solution(object):
         :type nums2: List[int]
          :rtype: float
         """
+        length = len(nums1) + len(nums2)
+        list = []
+        if length % 2 == 0:
+            print(0)
+        else:
+            print(1)
