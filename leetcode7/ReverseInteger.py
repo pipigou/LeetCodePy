@@ -10,9 +10,12 @@ class Solution(object):
             sign = 1
         strx = str(abs(x))
         r = strx[::-1]
-        return sign * int(r)
-
-r = Solution()
-x = 1534236469
-x = r.reverse(x)
+        result = sign * int(r)
+        if result > (2 ** 31 - 1) or result < -(2 ** 31):
+            return 0
+        else:
+            return result
+s =  Solution()
+x = 3245678
+x = s.reverse(x)
 print(x)
